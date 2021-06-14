@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: 120px 1fr 4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 'navs users chat-area';
+  height: 100vh;
+
+  .users {
+    grid-area: users;
+  }
+  .navs {
+    grid-area: navs;
+  }
+
+  .chat-area {
+    grid-area: chat-area;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+      'user-info'
+      'messages-area'
+      'typing-area';
+    .user-info {
+      grid-area: user-info;
+    }
+    .messages-area {
+      grid-area: messages-area;
+    }
+    .typing-area {
+      grid-area: typing-area;
+    }
+  }
+}
