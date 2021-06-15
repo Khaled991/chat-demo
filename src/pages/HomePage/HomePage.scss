@@ -1,6 +1,6 @@
-.container {
+.home-page {
   display: grid;
-  grid-template-columns: 120px 1fr 4fr;
+  grid-template-columns: 140px 1fr 3fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -9,9 +9,20 @@
 
   .users {
     grid-area: users;
+    border-right: 1px solid #2b2f4e;
   }
   .navs {
     grid-area: navs;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    .nav-inner {
+      background-color: #252849;
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .chat-area {
@@ -27,12 +38,14 @@
       'typing-area';
     .user-info {
       grid-area: user-info;
+      border-bottom: 1px solid #2b2f4e;
     }
     .messages-area {
       grid-area: messages-area;
     }
     .typing-area {
       grid-area: typing-area;
+      margin: 20px 30px;
     }
   }
 }

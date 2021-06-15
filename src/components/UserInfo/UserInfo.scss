@@ -1,0 +1,42 @@
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  .img-name-last-seen-user-info {
+    display: flex;
+    align-items: center;
+    .image-user-info {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 0 20px;
+    }
+    .name-last-seen-user-info-constainer {
+      display: flex;
+      flex-direction: column;
+      .name-user-info {
+        font-size: 18px;
+      }
+      .last-seen-user-info {
+        font-size: 14px;
+        color: #f3f3f588;
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    margin-right: 20px;
+    .action-icon {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      cursor: pointer;
+      fill: #5b5581;
+      &:hover {
+        fill: #a19dd8;
+      }
+    }
+  }
+}
